@@ -1,0 +1,51 @@
+@import "@/style/container";
+@import "@/style/viewports";
+@import "@/style/colors";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+
+  &__list {
+    display: none;
+
+    @include for-size(laptop) {
+      display: flex;
+      gap: 32px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    color: $MainClassicColor;
+    gap: 10px;
+  }
+}
+
+.button {
+  &__container {
+    display: none;
+
+    @include for-size(laptop) {
+      display: flex;
+      gap: 24px;
+    }
+  }
+
+  &__burger {
+    @include for-size(laptop) {
+      display: none;
+    }
+  }
+}
+
+.modal {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
