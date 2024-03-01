@@ -2,26 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  background-color: #043873;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+    font-size: 54px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 64px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+    font-size: 54px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 72px;
+  }
+}
+
+h3 {
+}
+
+p,
+a,
+button {
+  font-size: 16px;
+  font-weight: 400;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
 }
